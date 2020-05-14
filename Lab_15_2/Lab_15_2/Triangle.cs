@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Lab_15_2
 {
-    class Triangle : Shape1
+    public class Triangle : Shape1
     {
 		public Triangle(Point p1, Point p2, Point p3)
 		: base(p1, p2, p3)
