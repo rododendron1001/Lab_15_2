@@ -6,6 +6,6 @@ namespace Lab_15_2
 {
     public interface Translate_Dx
     {
-        void Translate(int dx);
+        void Translate_X(int dx);
     }
 }

@@ -6,6 +6,6 @@ namespace Lab_15_2
 {
     public interface Translate_Dy
     {
-        void Translate(int dy);
+        void Translate_Y(int dy);
     }
 }
