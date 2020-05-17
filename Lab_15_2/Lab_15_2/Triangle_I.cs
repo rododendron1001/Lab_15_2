@@ -33,10 +33,7 @@ namespace Lab_15_2
 			get;
 		}
 
-		public void Points_Array(params Point[] points)
-		{
-			return;
-		}
+		
 
 		void Translate_Dy.Translate_Y(int dy)
 		{
