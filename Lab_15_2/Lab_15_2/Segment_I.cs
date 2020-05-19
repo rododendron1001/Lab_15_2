@@ -16,7 +16,6 @@ namespace Lab_15_2
         {
             this.P1 = p1;
             this.P2 = p2;
-
         }
 
         public Point P1
@@ -31,7 +30,6 @@ namespace Lab_15_2
 
         void Translate_Dy.Translate_Y(int dy)
         {
-
             foreach (Point p in this.Points)
             {
                 p.Translate_y(dy);
@@ -40,10 +38,10 @@ namespace Lab_15_2
 
         void Translate_Dx.Translate_X(int dx)
         {
-
             foreach (Point p in this.Points)
             {
                 p.Translate_x(dx);
+              
             }
         }
     }

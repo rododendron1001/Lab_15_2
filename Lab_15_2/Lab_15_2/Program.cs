@@ -22,14 +22,12 @@ namespace Lab_15_2
 
         public void Translate_x(int dx)
         {
-            this.X += dx;
-         
+            this.X += dx;         
         }
 
         public void Translate_y(int dy)
         {
             this.Y += dy;
-
         }
 
     }

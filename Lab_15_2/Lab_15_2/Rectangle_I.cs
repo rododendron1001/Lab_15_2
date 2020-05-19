@@ -48,6 +48,7 @@ namespace Lab_15_2
             foreach (Point p in this.Points)
             {
                 p.Translate_x(dx);
+               
             }
         }
     }
