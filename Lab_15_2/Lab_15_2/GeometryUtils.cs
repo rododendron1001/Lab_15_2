@@ -29,21 +29,26 @@ namespace Lab_15_2
 			}
 		}
 
-		public static int Calculate_Perimeter(Shape shape)
+		public static double Calculate_Perimeter(Shape shape)
 
         {
-            int perimeter = 0;
+            double perimeter = 0;
 			
-			for (int i = 0; i < shape.Points.Length; i++)
+			for (int i = 0; i < shape.Points.Length-1; i++)
 				{
 
 				//length_segment = Math.Abs(Math.Sqrt((P2.X - P1.X) * (P2.X - P1.X) + (P2.Y - P1.Y) * (P2.Y - P1.Y)));
 				//perim_triangle=	Math.Abs(Math.Sqrt((P2.X - P1.X) * (P2.X - P1.X) + (P2.Y - P1.Y) * (P2.Y - P1.Y)) + Math.Sqrt((P2.X - P3.X) * (P2.X - P3.X) + (P2.Y - P3.Y) * (P2.Y - P3.Y)) + Math.Sqrt((P3.X - P1.X) * (P3.X - P1.X) + (P3.Y - P1.Y) * (P3.Y - P1.Y)));
-
+				
+				perimeter = perimeter + Math.Abs(Math.Sqrt((shape.Points[i + 1].X - shape.Points[i].X) * (shape.Points[i + 1].X - shape.Points[i].X) + (shape.Points[i + 1].Y - shape.Points[i].Y) * (shape.Points[i + 1].Y - shape.Points[i].Y))) ;
+				i = i + 1;
 
 				}
+			
+			perimeter = perimeter + Math.Abs(Math.Sqrt((shape.Points[shape.Points.Length-1].X - shape.Points[0].X) * (shape.Points[shape.Points.Length-1].X - shape.Points[0].X) + (shape.Points[shape.Points.Length-1].Y - shape.Points[0].Y) * (shape.Points[shape.Points.Length-1].Y - shape.Points[0].Y)));
 
-			return perimeter;
+
+			return Math.Round(perimeter);
 
 
 			
