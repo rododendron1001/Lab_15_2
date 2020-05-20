@@ -8,7 +8,11 @@ namespace Lab_15_2
     {
         public Point[] Points
         {
-            get;
+            
+            get
+            {
+                return new Point[] { P1, P2 };
+            }
         }
 
         public Segment_I(Point p1, Point p2)
@@ -28,6 +32,7 @@ namespace Lab_15_2
             get;
         }
 
+        
         void Translate_Dy.Translate_Y(int dy)
         {
             foreach (Point p in this.Points)

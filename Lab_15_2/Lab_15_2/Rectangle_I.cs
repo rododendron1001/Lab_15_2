@@ -8,16 +8,22 @@ namespace Lab_15_2
     {
         public Point[] Points
         {
-            get;
+            get
+             {
+                return new Point[] { TopLeft, new Point(TopLeft.X + Width, TopLeft.Y), new Point(TopLeft.X, TopLeft.Y + Height), new Point(TopLeft.X + Width, TopLeft.Y + Height) };
+            }
         }
 
         public Rectangle_I(Point topLeft, int width, int height)
-            //this(topLeft, new Point(topLeft.X + width, topLeft.Y), new Point(topLeft.X, topLeft.Y + height), new Point(topLeft.X + width, topLeft.Y + height))
+           
         {
             this.TopLeft = topLeft;
             this.Width = width;
             this.Height = height;
         }
+
+        
+
         public Point TopLeft
         {
             get;

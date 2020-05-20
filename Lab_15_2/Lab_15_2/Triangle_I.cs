@@ -8,7 +8,10 @@ namespace Lab_15_2
     {
 		public Point[] Points
 		{
-			get;
+			get
+			 {
+				return new Point[] { P1, P2, P3 };
+			}
 		}
 		public Triangle_I(Point p1, Point p2, Point p3)
 		
