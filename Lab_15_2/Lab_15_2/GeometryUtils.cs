@@ -33,10 +33,20 @@ namespace Lab_15_2
 
         {
             int perimeter = 0;
+			
+			for (int i = 0; i < shape.Points.Length; i++)
+				{
+
+				//length_segment = Math.Abs(Math.Sqrt((P2.X - P1.X) * (P2.X - P1.X) + (P2.Y - P1.Y) * (P2.Y - P1.Y)));
+				//perim_triangle=	Math.Abs(Math.Sqrt((P2.X - P1.X) * (P2.X - P1.X) + (P2.Y - P1.Y) * (P2.Y - P1.Y)) + Math.Sqrt((P2.X - P3.X) * (P2.X - P3.X) + (P2.Y - P3.Y) * (P2.Y - P3.Y)) + Math.Sqrt((P3.X - P1.X) * (P3.X - P1.X) + (P3.Y - P1.Y) * (P3.Y - P1.Y)));
 
 
+				}
 
-            return perimeter;
+			return perimeter;
+
+
+			
 
 
         }
